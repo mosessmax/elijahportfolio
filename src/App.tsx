@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+const Header: React.FC = () => (
+  <header className="flex flex-col sm:text-sm text-base dark:text-slate-12 gap-1 mb-10 text-slate-light-12">
+    <h1>Remilekun Elijah</h1>
+    <h2>fullstack developer in Lagos NGA</h2>
+  </header>
+);
+  // const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+  const App: React.FC = () => {
+    return <body className='bg-slate-1 dark:bg-slate-12 text-slate-light-12 dark:text-slate-1'>
+      <div className='container mx-auto px-4'>
+        <Header />
+        <main>
+          <p>
+            I'm a fullstack developer based in Lagos, Nigeria. I specialize in building web applications using React and Node.js.
+          </p>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+    </body>;
+  }
+export default App;
