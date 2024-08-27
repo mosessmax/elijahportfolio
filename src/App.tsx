@@ -25,7 +25,7 @@ const AvailabilitySection: React.FC = () => (
     <div className="sm:text-sm text-base text-balance">
       I’m fluent in modern technologies like JS/TS, React, Node.js, MySQL, Express.js, and more. whether it’s full-time projects or contract work, i bring a strong command of the latest tools to every challenge. currently, i'm making things happen at
       <span className="px-[3px] relative">
-        <a className="border-b-[0.5px] dark:border-b-slate-11 dark:hover:text-slate-12 transition-all border-b-slate-light-11 dark:hover:border-b-slate-12 group-hover:border-b-slate-light-12 hover:text-slate-light-12" href="https://inovantics.com" rel="noopener noreferrer" target="_blank">Innovanctics Limited </a>
+        <a className="border-b-[0.5px] dark:border-b-slate-11 dark:hover:text-slate-12 transition-all border-b-slate-light-11 dark:hover:border-b-slate-12 group-hover:border-b-slate-light-12 hover:text-slate-light-12 underline" href="https://inovantics.com" rel="noopener noreferrer" target="_blank">Innovanctics Limited </a>
       </span>
       let’s build something great together.<a className="border-b-[0.5px] dark:border-b-slate-11 dark:hover:text-slate-12 transition-all border-b-slate-light-11 dark:hover:border-b-slate-12 group-hover:border-b-slate-light-12 hover:text-slate-light-12"></a>
     </div>
