@@ -1,0 +1,133 @@
+.nowPlayingCard {
+    flex-shrink: 0;
+    /* border-radius: 10px; */
+    border: 2px solid #000;
+    /* box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3); */
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+
+    backdrop-filter: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    opacity: 1;
+}
+
+.nowPlayingCard {
+    place-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 100px;
+    border-width: 0px;
+    box-shadow: rgba(6, 6, 6, 0.08) 0px 1.4px 4px 0px, rgba(6, 6, 6, 0.08) 0px 0px 0px 1px;
+    box-sizing: border-box;
+    color: #000;
+    gap: 6px;
+    cursor: pointer;
+    display: flex;
+    field-sizing: fixed;
+    font-family: Geist;
+    font-size-adjust: none;
+    inset-area: none;
+    line-height: normal;
+    padding-block: 6px;
+    position-try: none;
+    position-visibility: always;
+    ruby-align: space-around;
+    text-decoration: none solid rgb(0, 0, 238);
+    text-spacing-trim: normal;
+    view-transition-class: none;
+}
+
+.nowPlayingCard:hover {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+    transform: translate(-0.5px, -0.2px);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.nowPlayingCard a {
+    color: black;
+    text-decoration: none;
+}
+
+.nowPlayingCard a:hover {
+    text-decoration: underline;
+}
+
+.nowPlayingImage img {
+    border-radius: 100px;
+    border: 1px solid slate;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 10px;
+    animation: rotate 15s infinite linear;
+}
+
+/* .nowPlayingCard.playing .nowPlayingImage img {
+    animation-play-state: running;
+}
+
+.nowPlayingCard:not(.playing) .nowPlayingImage img {
+    animation-play-state: paused;
+} */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nowPlayingImage img:hover {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    transform: translate(-3px, -3px);
+}
+
+#nowPlayingDetails {
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    font-size: 12px;
+    height: 100%;
+}
+
+.nowPlayingTitle, .playlistName {
+    flex-shrink: 0;
+    color: #000;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 10px;
+    width: 100%;
+}
+
+.nowPlayingArtist, .playlistHeader {
+    text-align: left;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.nowPlayingTime {
+    text-align: left;
+}
+
+.nowPlayingState {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+}
+
+.nowPlayingState img {
+    /* filter: invert(100%); */
+    width: 100%;
+}

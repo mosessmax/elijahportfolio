@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Sun, Moon } from '@phosphor-icons/react';
+import SpotifyNowPlaying from './SpotifyNowPlaying';
 
 const Header: React.FC = () => (
   <header className="flex flex-col sm:text-sm text-base dark:text-slate-12 gap-1 mb-10 text-slate-light-12">
     <h1 className="font-geist font-bold text-2xl">Remilekun Elijah</h1>
     <h2>fullstack developer from Lagos NGA.</h2>
+    <SpotifyNowPlaying />
   </header>
 );
 
