@@ -6,10 +6,14 @@ export default {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        geist: ['Geist', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

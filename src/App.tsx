@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 const Header: React.FC = () => (
   <header className="flex flex-col sm:text-sm text-base dark:text-slate-12 gap-1 mb-10 text-slate-light-12">
-    <h1>Remilkeun Elijah</h1>
+    <h1 className="font-geist font-bold text-2xl">Remilekun Elijah</h1>
     <h2>fullstack developer from Lagos NGA.</h2>
   </header>
 );
@@ -93,7 +93,7 @@ const [isDarkMode, setIsDarkMode] = useState(false);
   }, [isDarkMode]);
 
   return (
-    <div className={`dark:text-slate-11 bg-slate-light-1 dark:bg-slate-1 dark:selection:bg-slate-light-1 dark:selection:text-light-slate-12 font-neueMontreal p-16 px-8 selection:bg-slate-1 selection:text-slate-12 sm:px-16 text-slate-light-12 ${isDarkMode ? 'dark' : ''}`}>
+    <div className={`dark:text-slate-11 bg-slate-light-1 dark:bg-slate-1 dark:selection:bg-slate-light-1 dark:selection:text-light-slate-12 font-geist p-16 px-8 selection:bg-slate-1 selection:text-slate-12 sm:px-16 text-slate-light-12 ${isDarkMode ? 'dark' : ''}`}>
       <button onClick={toggleDarkMode} className="mb-4 p-2 border rounded">Toggle Dark Mode</button>
     <main className="flex flex-col gap-16 max-w-[460px]">
       <Header />
