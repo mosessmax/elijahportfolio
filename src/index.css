@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+/* @layer utilities {
+  .bg-slate-1 {
+    background-color: slate-1;
+  }
+}
+
+body.dark {
+  @apply bg-slate-1 text-slate-12;
+}
+
+body {
+  @apply bg-slate-light-1 text-slate-light-12;
+} */

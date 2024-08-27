@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Header: React.FC = () => (
   <header className="flex flex-col sm:text-sm text-base dark:text-slate-12 gap-1 mb-10 text-slate-light-12">
@@ -72,15 +72,37 @@ const Footer: React.FC = () => {
 
 
 // app  
-const App: React.FC = () => (
-  <body className="dark:text-slate-11 bg-slate-light-1 dark:bg-slate-1 dark:selection:bg-slate-light-1 dark:selection:text-light-slate-12 font-neueMontreal p-16 px-8 selection:bg-slate-1 selection:text-slate-12 sm:px-16 text-slate-light-12">
+const App: React.FC = () => {
+const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // useEffect(() => {
+  //   const hour = new Date().getHours();
+  //   if (hour >= 18 || hour < 6) {
+  //     setIsDarkMode(true);
+  //   } else {
+  //     setIsDarkMode(false);
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    document.body.className = isDarkMode ? 'dark' : '';
+  }, [isDarkMode]);
+
+  return (
+    <div className={`dark:text-slate-11 bg-slate-light-1 dark:bg-slate-1 dark:selection:bg-slate-light-1 dark:selection:text-light-slate-12 font-neueMontreal p-16 px-8 selection:bg-slate-1 selection:text-slate-12 sm:px-16 text-slate-light-12 ${isDarkMode ? 'dark' : ''}`}>
+      <button onClick={toggleDarkMode} className="mb-4 p-2 border rounded">Toggle Dark Mode</button>
     <main className="flex flex-col gap-16 max-w-[460px]">
       <Header />
       <AboutSection />
       <AvailabilitySection />
       <Footer />
     </main>
-  </body>
+  </div>
 );
+}
 
 export default App;
