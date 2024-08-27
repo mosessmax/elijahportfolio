@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'Geist';
     src: url('@/assets/fonts/Geist-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}
+} */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
 
@@ -37,7 +39,7 @@
     cursor: pointer;
     display: flex;
     field-sizing: fixed;
-    font-family: Geist;
+    font-family: Inter, sans-serif;
     font-size-adjust: none;
     inset-area: none;
     line-height: normal;
