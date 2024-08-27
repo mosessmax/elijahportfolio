@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('../assets/fonts/geist.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 .nowPlayingCard {
     flex-shrink: 0;
     /* border-radius: 10px; */
