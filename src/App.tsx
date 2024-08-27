@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
         </li>
         <li className="flex group justify-between">
           <span>Twitter (X)</span>
-          <a className="border-b-[0.5px] dark:border-b-slate-11 dark:hover:text-slate-12 transition-all border-b-slate-light-12 dark:group-hover:border-b-slate-12 group-hover:border-b-slate-light-11 hover:text-slate-light-11" href="https://x.com/facumontanaro_" rel="noopener noreferrer" target="_blank">@remilekunelijah</a>
+          <a className="border-b-[0.5px] dark:border-b-slate-11 dark:hover:text-slate-12 transition-all border-b-slate-light-12 dark:group-hover:border-b-slate-12 group-hover:border-b-slate-light-11 hover:text-slate-light-11" href="https://x.com/remilekunelijah" rel="noopener noreferrer" target="_blank">@remilekunelijah</a>
         </li>
       </ul>
     </footer>
