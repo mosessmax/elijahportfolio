@@ -1,0 +1,46 @@
+{
+  "name": "Remilekun Elijah",
+  "title": "Software Engineer",
+  "bio": [
+    "hello world, i'm the developer who turns complex ideas into sleek, functional realities.",
+    "whether it's architecting robust backends or crafting intuitive frontends, i thrive on solving problems and building things that just work.",
+    "code is my tool, but delivering real-world results is my game. let's turn your vision into something tangible and awesome."
+  ],
+  "current": "Innovanctics Limited",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/remilekunelijah",
+    "github": "https://github.com/remilekun-elijah",
+    "email": "remilekunelijah21997@gmail.com",
+    "twitter": "https://twitter.com/remilekunelijah",
+    "resume": "https://read.cv/remilekunelijah"
+  },
+  "projects": [
+    {
+      "title": "Sample Project 1",
+      "description": "Description / Date",
+      "link": "#"
+    },
+    {
+      "title": "Sample Project 2",
+      "description": "Description / Date",
+      "link": "#"
+    },
+    {
+      "title": "Sample Project 3",
+      "description": "Description / Date",
+      "link": "#"
+    }
+  ],
+  "stack": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MySQL",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
+  ]
+}
